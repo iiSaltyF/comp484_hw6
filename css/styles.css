@@ -7,20 +7,153 @@
 
 /* Global styles 
 ------------------------------------*/
+/* #region Styles */
+/* will be using mostly the same from proj 1 */
+
 body {
-    /*background: lightblue;*/
+    margin: 0;
+    padding: 0;
+    background-color: #14181e;
+    color: #c6cdd5;
+    font-family: "Oswaldo", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* #endregion Styles */
 
 /* Header & Footer 
 ------------------------------------*/
+/* #region Header */
+.header {
+    background: #0d1117;
+    border-bottom: 1px solid #30363d;
+    padding: 12px 16px 0;
+}
 
+.header p {
+    font-size: 15px;
+}
+
+/* Top row incase I want to add more later*/
+.topbar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.pagename {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #c9d1d9;
+}
+
+
+/* The actual tab link */
+.UnderlineItem {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 12px;
+    color: #c9d1d9;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.UnderlineItem:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-bottom-color: #30363d;
+}
+
+.UnderlineItem.is-active {
+    font-weight: 600;
+    border-bottom-color: #163496;
+}
+
+/* Underline the actaul nav bar */
+.UnderlineNav {
+    /* not actaully used here but can be used if enough pages is added */
+    overflow-x: auto;
+}
+
+.UnderlineItemList {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #21262d;
+}
+
+.UnderlineNavItem {
+    margin: 0;
+}
+
+
+footer {
+    margin: 4px;
+    /* padding: 8px; */
+    padding-bottom: 8px;
+    font-size: 15px;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 10px;
+}
+/* #endregion Header */
 
 
 /* Work Experience
 ------------------------------------*/
+/* #region Experience */
+section {
+    margin: 4px;
+    padding: 8px;
+}
 
+section div {
+    width: 33%;
+    border-bottom: #30363d;
+}
 
+/* reused from proj 1 */
+.card {
+    border-left: 4px solid #7aa2ffd9;
+    padding: 2px 18px;
+    background: #7aa2ff14;
+    border-radius: 12px;
+}
+/* #endregion Experience */
 
 /* Education
 ------------------------------------*/
+
